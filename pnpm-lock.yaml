@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rushstack/eslint-patch': ^1.1.0
+  '@types/intro.js': ^3.0.2
   '@types/node': ^16.11.25
   '@vitejs/plugin-vue': ^2.2.2
   '@vue/eslint-config-prettier': ^7.0.0
@@ -11,6 +12,7 @@ specifiers:
   '@vueuse/core': ^7.7.0
   eslint: ^8.5.0
   eslint-plugin-vue: ^8.2.0
+  intro.js: ^5.0.0
   less: ^4.1.2
   pinia: ^2.0.11
   prettier: ^2.5.1
@@ -23,6 +25,7 @@ specifiers:
 dependencies:
   '@vueuse/components': 7.7.0_vue@3.2.31
   '@vueuse/core': 7.7.0_vue@3.2.31
+  intro.js: 5.0.0
   less: 4.1.2
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
   vue: 3.2.31
@@ -30,6 +33,7 @@ dependencies:
 
 devDependencies:
   '@rushstack/eslint-patch': 1.1.0
+  '@types/intro.js': 3.0.2
   '@types/node': 16.11.26
   '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
   '@vue/eslint-config-prettier': 7.0.0_eslint@8.10.0+prettier@2.5.1
@@ -133,6 +137,10 @@ packages:
 
   /@rushstack/eslint-patch/1.1.0:
     resolution: {integrity: sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==}
+    dev: true
+
+  /@types/intro.js/3.0.2:
+    resolution: {integrity: sha512-kow8REgIIG42atN9vAaIdpEqVzj6WzV9m0PII8oce+an4Lc3eyfQF32/FbabbGmfWuF7TceTdd+gh74kOrXkPw==}
     dev: true
 
   /@types/json-schema/7.0.9:
@@ -1334,6 +1342,10 @@ packages:
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
     dev: true
+
+  /intro.js/5.0.0:
+    resolution: {integrity: sha512-bj3R8Fb9h5I/oJIit60KciZUXBDviA4qV1iM9O/AXQvrfv78Szx9ILuRWET1W2jGge8RcM11TApxwQ0007Y1nQ==}
+    dev: false
 
   /is-core-module/2.8.1:
     resolution: {integrity: sha512-SdNCUs284hr40hFTFP6l0IfZ/RSrMXF3qgoRHd3/79unUTvrFO/JoXwkGm+5J/Oe3E/b5GsnG330uUNgRpu1PA==}

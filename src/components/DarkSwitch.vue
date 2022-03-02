@@ -1,12 +1,12 @@
 <template>
   <div class="dark-btn">
-    <button @click="myClick">vueuse</button>
-    <UseDark v-slot="{ isDark, toggleDark }">
+    <button @click="myClick">isDark: {{ isDark }}</button>
+    <!-- <UseDark v-slot="{ isDark, toggleDark }">
       <button @click="toggleDark()">Is Dark: {{ isDark }}</button>
-    </UseDark>
+    </UseDark> -->
     <UseDark>
       <div class="theme-switch-wrapper">
-        <button class="theme-switch">
+        <button class="theme-switch" @click="toggleDark()">
           <span class="switch-check">
             <span class="switch-icon">
               <svg
@@ -64,17 +64,17 @@
 </template>
 
 <script setup lang="ts">
-import { useDark, useToggle } from "@vueuse/core";
-import { UseDark } from "@vueuse/components";
+import { useDark, useToggle } from '@vueuse/core'
+import { UseDark } from '@vueuse/components'
 
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 const myClick = () => {
-  toggleDark();
-};
+  toggleDark()
+}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .theme-switch-wrapper {
   padding: 10px;
   .theme-switch {
