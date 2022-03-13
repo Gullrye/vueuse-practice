@@ -13,7 +13,7 @@
       </div>
       <input type="text" placeholder="你的名字" ref="introInput" />
     </div>
-    <button @click="handleStart">Start Intro</button>
+    <button @click="handleStart">开始引导教程</button>
   </div>
 </template>
 
@@ -48,16 +48,24 @@ function handleStart() {
           title: '输入框',
           element: introInput.value,
           intro: '这是我们的输入框。'
-        },
+        }
       ]
     })
     .start()
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .logo {
   width: 200px;
   height: 200px;
+}
+.dark {
+  .introjs-tooltipReferenceLayer {
+    color: black;
+  }
+  .introjs-helperLayer {
+    background: #fff;
+  }
 }
 </style>

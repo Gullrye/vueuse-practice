@@ -1,22 +1,31 @@
 <template>
-  <header>
-    <DarkSwitch />
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/vueuse">VueUse-test</RouterLink>
-        <RouterLink to="/intro">IntroPage</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div>
+    <header>
+      <div class="demo">
+        <DarkSwitch />
+        <FullScreen />
+      </div>
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/vueuse">VueUse-test</RouterLink>
+          <RouterLink to="/intro">引导页</RouterLink>
+          <RouterLink to="/exam">问卷测试</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-  <RouterView />
+    <div class="view-wrapper">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { RouterLink, RouterView } from 'vue-router'
 import DarkSwitch from '@/components/DarkSwitch.vue'
+import FullScreen from '@/components/FullScreen.vue'
 </script>
 
 <style lang="less">
@@ -34,9 +43,17 @@ html.dark {
     }
   }
 }
-
+.view-wrapper {
+  padding: 20px;
+  overflow: hidden;
+}
+.demo {
+  display: flex;
+  & > div {
+    padding: 5px;
+  }
+}
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
